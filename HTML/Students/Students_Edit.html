@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="../../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../../Scripts/jquery-3.0.0.js"></script>
+    <script src="../../Scripts/popper.js"></script>
+    <script src="../../Scripts/bootstrap.js"></script>
+
+</head>
+<body class="bg-info">
+    <div class="container-fluid">
+
+        <!--First Header Row-->
+        <div class="row">
+            <div class="col">
+                <!-- A grey horizontal navbar that becomes vertical on small screens -->
+                <nav class="navbar navbar-expand-sm bg-dark">
+                    <a class="navbar-brand" href="../../Index.html">Private School</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Links -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="Students.html">Students</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Trainers/Trainers.html">Trainers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Courses/Courses.html">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Assignments/Assignments.html">Assignments</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Students/Students_Per_Course.html">Students Per Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Trainers/Trainers_Per_Course.html">Trainers Per Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Assignments/Assignments_Per_Course.html">Assignments Per Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Assignments/Assignments_Per_Student_Per_Course.html">Assignments Per Student Per Course</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+        <!--Edit Student-->
+        <div class="mt-4 mb-0 float-right">
+            <a class="btn btn-success" href="Students.html">Return to Students</a>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="container">
+                    <div class="edit_student" id="edit_zografidou">
+                        <div class="table mt-4 mb-0">
+                            <table class="table table-dark table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Edit Student Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="Student1_Fname_edit">First Name</label>
+                                                    <input id="Student1_Fname_edit" class="form-control" type="text" name="Student1_Fname_edit" value="Anastasia" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 characters" />
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="Student1_Lname">Last Name</label>
+                                                    <input id="Student1_Lname" class="form-control" type="text" name="Student1_Lname" value="Zografidou" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}" />
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="Student1_BirthDate">Birth Date (mm/dd/yyyy) (from 01-01-1920 to 12-31-2004)</label>
+                                                    <input id="Student1_BirthDate" class="form-control" type="date" name="Student1_BirthDate" value="1998-04-20" autocomplete="off" required min="1920-01-01" max="2004-12-31" />
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="Student1_TuitionFees">Tuition Fees</label>
+                                                    <input id="Student1_TuitionFees" class="form-control" type="number" name="Student1_TuitionFees" value="1500" placeholder="Number from 0 to 10000" autocomplete="off" required min="0" max="10000" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <button class="btn btn-primary form-control" type="submit">Submit</button>
+                                                </div>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <hr />
+                    <br />
+                    <div class="edit_student" id="edit_loufadoros">
+                        <div class="table mt-4 mb-0">
+                            <table class="table table-dark table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Edit Student Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="Student2_Fname_edit">First Name</label>
+                                                    <input id="Student2_Fname_edit" class="form-control" type="text" name="Student2_Fname_edit" value="Kostis" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 characters" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Student2_Lname">Last Name</label>
+                                                    <input id="Student2_Lname" class="form-control" type="text" name="Student2_Lname" value="Loufadoros" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}"/>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Student2_BirthDate">Birth Date (mm/dd/yyyy) (from 01-01-1920 to 31-12-2004)</label>
+                                                    <input id="Student2_BirthDate" class="form-control" type="date" name="Student2_BirthDate" value="1992-11-15" autocomplete="off" required min="1920-01-01" max="2004-12-31" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Student2_TuitionFees">Tuition Fees</label>
+                                                    <input id="Student2_TuitionFees" class="form-control" type="number" name="Student2_TuitionFees" value="1500" placeholder="Number from 0 to 10000" autocomplete="off" required min="0" max="10000" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <button class="btn btn-primary form-control" type="submit">Submit</button>
+                                                </div>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <hr />
+                        <br />
+                        <div class="edit_student" id="edit_sensitakis">
+                            <div class="table mt-4 mb-0">
+                                <table class="table table-dark table-hover text-center">
+                                    <thead>
+                                        <tr>
+                                            <th>Edit Student Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="Student3_Fname_edit">First Name</label>
+                                                        <input id="Student3_Fname_edit" class="form-control" type="text" name="Student3_Fname_edit" value="Giorgos" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 characters" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Student3_Lname">Last Name</label>
+                                                        <input id="Student3_Lname" class="form-control" type="text" name="Student3_Lname" value="Sensitakis" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}"/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Student3_BirthDate">Birth Date (mm/dd/yyyy) (from 01-01-1920 to 31-12-2004)</label>
+                                                        <input id="Student3_BirthDate" class="form-control" type="date" name="Student3_BirthDate" value="1995-05-23" autocomplete="off" required min="1920-01-01" max="2004-12-31" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Student3_TuitionFees">Tuition Fees</label>
+                                                        <input id="Student3_TuitionFees" class="form-control" type="number" name="Student3_TuitionFees" value="1250" placeholder="Number from 0 to 10000" autocomplete="off" required min="0" max="10000" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button class="btn btn-primary form-control" type="submit">Submit</button>
+                                                    </div>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <hr />
+                        <br />
+                        <div class="edit_student" id="edit_eksafanizol">
+                            <div class="table mt-4 mb-0">
+                                <table class="table table-dark table-hover text-center">
+                                    <thead>
+                                        <tr>
+                                            <th>Edit Student Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="Student4_Fname_edit">First Name</label>
+                                                        <input id="Student4_Fname_edit" class="form-control" type="text" name="Student4_Fname_edit" value="Maria" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 characters" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Student4_Lname">Last Name</label>
+                                                        <input id="Student4_Lname" class="form-control" type="text" name="Student4_Lname" value="Eksafanizol" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Student4_BirthDate">Birth Date (mm/dd/yyyy) (from 01-01-1920 to 31-12-2004)</label>
+                                                        <input id="Student4_BirthDate" class="form-control" type="date" name="Student4_BirthDate" value="1994-03-12" autocomplete="off" required min="1920-01-01" max="2004-12-31" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Student4_TuitionFees">Tuition Fees</label>
+                                                        <input id="Student4_TuitionFees" class="form-control" type="number" name="Student4_TuitionFees" value="1250" placeholder="Number from 0 to 10000" autocomplete="off" required min="0" max="10000" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button class="btn btn-primary form-control" type="submit">Submit</button>
+                                                    </div>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <hr />
+                        <br />
+                        <div class="edit_student" id="edit_tsitomeni">
+                            <div class="table mt-4 mb-0">
+                                <table class="table table-dark table-hover text-center">
+                                    <thead>
+                                        <tr>
+                                            <th>Edit Student Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="Student5_Fname_edit">First Name</label>
+                                                        <input id="Student5_Fname_edit" class="form-control" type="text" name="Student5_Fname_edit" value="Dimitra" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 characters" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Student5_Lname">Last Name</label>
+                                                        <input id="Student5_Lname" class="form-control" type="text" name="Student5_Lname" value="Tsitomeni" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}"/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Student5_BirthDate">Birth Date (mm/dd/yyyy) (from 01-01-1920 to 31-12-2004)</label>
+                                                        <input id="Student5_BirthDate" class="form-control" type="date" name="Student5_BirthDate" value="1992-11-30" autocomplete="off" required min="1920-01-01" max="2004-12-31" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Student5_TuitionFees">Tuition Fees</label>
+                                                        <input id="Student5_TuitionFees" class="form-control" type="number" name="Student5_TuitionFees" value="1000" placeholder="Number from 0 to 10000" autocomplete="off" required min="0" max="10000" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button class="btn btn-primary form-control" type="submit">Submit</button>
+                                                    </div>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <hr />
+                        <br />
+                        <div class="edit_student" id="edit_sotiriadis">
+                            <div class="table mt-4 mb-0">
+                                <table class="table table-dark table-hover text-center">
+                                    <thead>
+                                        <tr>
+                                            <th>Edit Student Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="Student6_Fname_edit">First Name</label>
+                                                        <input id="Student6_Fname_edit" class="form-control" type="text" name="Student6_Fname_edit" value="Thodoris" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 characters" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Student6_Lname">Last Name</label>
+                                                        <input id="Student6_Lname" class="form-control" type="text" name="Student6_Lname" value="Sotiriadis" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}"/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Student6_BirthDate">Birth Date (mm/dd/yyyy) (from 01-01-1920 to 31-12-2004)</label>
+                                                        <input id="Student6_BirthDate" class="form-control" type="date" name="Student6_BirthDate" value="1983-07-11" autocomplete="off" required min="1920-01-01" max="2004-12-31" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Student6_TuitionFees">Tuition Fees</label>
+                                                        <input id="Student6_TuitionFees" class="form-control" type="number" name="Student6_TuitionFees" value="1000" placeholder="Number from 0 to 10000" autocomplete="off" required min="0" max="10000" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button class="btn btn-primary form-control" type="submit">Submit</button>
+                                                    </div>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 mb-4 float-right">
+            <a class="btn btn-success" href="Students.html">Return to Students</a>
+        </div>
+    </div>
+</body>
+</html>

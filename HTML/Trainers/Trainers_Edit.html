@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="../../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../../Scripts/jquery-3.0.0.js"></script>
+    <script src="../../Scripts/popper.js"></script>
+    <script src="../../Scripts/bootstrap.js"></script>
+
+</head>
+<body class="bg-info">
+    <div class="container-fluid">
+
+        <!--First Header Row-->
+        <div class="row">
+            <div class="col">
+                <!-- A grey horizontal navbar that becomes vertical on small screens -->
+                <nav class="navbar navbar-expand-sm bg-dark">
+                    <a class="navbar-brand" href="../../Index.html">Private School</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Links -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Students/Students.html">Students</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="Trainers.html">Trainers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Courses/Courses.html">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Assignments/Assignments.html">Assignments</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Students/Students_Per_Course.html">Students Per Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Trainers/Trainers_Per_Course.html">Trainers Per Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Assignments/Assignments_Per_Course.html">Assignments Per Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Assignments/Assignments_Per_Student_Per_Course.html">Assignments Per Student Per Course</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+        <!--Edit Trainer-->
+        <div class="mt-4 mb-0 float-right">
+            <a class="btn btn-success" href="Trainers.html">Return to Trainers</a>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="container">
+                    <div class="edit_trainer" id="edit_papakosta">
+                        <div class="table mt-4 mb-0">
+                            <table class="table table-dark table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Edit Trainer Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <form>
+                                                <div class="form-group">
+                                                    <div class="form-group">
+                                                        <label for="Trainer1_Fname_edit">First Name</label>
+                                                        <input id="Trainer1_Fname_edit" class="form-control" type="text" name="Trainer1_Fname_edit" value="Maria" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 characters" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Trainer1_Lname_edit">Last Name</label>
+                                                        <input id="Trainer1_Lname_edit" class="form-control" type="text" name="Trainer1_Lname_edit" value="Papakosta" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 characters" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Trainer1_Subject_edit">Subject</label>
+                                                        <input id="Trainer1_Subject_edit" class="form-control" type="text" name="Trainer1_Subject_edit" value="Maths" placeholder="Enter letters and/or numbers (length must be 2 - 15)" autocomplete="off" required pattern="[A-Za-z0-9\s]{2,15}" title="Letters and numbers between 2 and 15 characters/numbers" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button class="btn btn-primary form-control" type="submit">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <hr />
+                    <br />
+                    <div class="edit_trainer" id="edit_Karampelou">
+                        <div class="table mt-4 mb-0">
+                            <table class="table table-dark table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Edit Trainer Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <form>
+                                                <div class="form-group">
+                                                    <div class="form-group">
+                                                        <label for="Trainer2_Fname_edit">First Name</label>
+                                                        <input id="Trainer2_Fname_edit" class="form-control" type="text" name="Trainer2_Fname_edit" value="Ioanna" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 characters" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Trainer2_Lname_edit">Last Name</label>
+                                                        <input id="Trainer2_Lname_edit" class="form-control" type="text" name="Trainer2_Lname_edit" value="Karampelou" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required  pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 characters" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Trainer2_Subject_edit">Subject</label>
+                                                        <input id="Trainer2_Subject_edit" class="form-control" type="text" name="Trainer2_Subject_edit" value="Maths" placeholder="Enter letters and/or numbers (length must be 2 - 15)" autocomplete="off" required pattern="[A-Za-z0-9\s]{2,15}" title="Letters and numbers between 2 and 15 characters/numbers" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button class="btn btn-primary form-control" type="submit">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <hr />
+                    <br />
+                    <div class="edit_trainer" id="edit_katakaimeni">
+                        <div class="table mt-4 mb-0">
+                            <table class="table table-dark table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Edit Trainer Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <form>
+                                                <div class="form-group">
+                                                    <div class="form-group">
+                                                        <label for="Trainer3_Fname_edit">First Name</label>
+                                                        <input id="Trainer3_Fname_edit" class="form-control" type="text" name="Trainer3_Fname_edit" value="Margarita" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 characters" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Trainer3_Lname_edit">Last Name</label>
+                                                        <input id="Trainer3_Lname_edit" class="form-control" type="text" name="Trainer3_Lname_edit" value="Katakaimeni" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 characters"/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Trainer3_Subject_edit">Subject</label>
+                                                        <input id="Trainer3_Subject_edit" class="form-control" type="text" name="Trainer3_Subject_edit" value="Psychology" placeholder="Enter letters and/or numbers (length must be 2 - 15)" autocomplete="off" required pattern="[A-Za-z0-9\s]{2,15}" title="Letters and numbers between 2 and 15 characters/numbers" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button class="btn btn-primary form-control" type="submit">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <hr />
+                    <br />
+                    <div class="edit_trainer" id="edit_sovaridou">
+                        <div class="table mt-4 mb-0">
+                            <table class="table table-dark table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Edit Trainer Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <form>
+                                                <div class="form-group">
+                                                    <div class="form-group">
+                                                        <label for="Trainer4_Fname_edit">First Name</label>
+                                                        <input id="Trainer4_Fname_edit" class="form-control" type="text" name="Trainer4_Fname_edit" value="Emmanouela" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 characters" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Trainer4_Lname_edit">Last Name</label>
+                                                        <input id="Trainer4_Lname_edit" class="form-control" type="text" name="Trainer4_Lname_edit" value="Sovaridou" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required  pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 characters"/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Trainer4_Subject_edit">Subject</label>
+                                                        <input id="Trainer4_Subject_edit" class="form-control" type="text" name="Trainer4_Subject_edit" value="Psychology" placeholder="Enter letters and/or numbers (length must be 2 - 15)" autocomplete="off" required pattern="[A-Za-z0-9\s]{2,15}" title="Letters and numbers between 2 and 15 characters/numbers" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button class="btn btn-primary form-control" type="submit">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4 mb-4 float-right">
+        <a class="btn btn-success" href="Trainers.html">Return to Trainers</a>
+    </div>
+</body>
+</html>

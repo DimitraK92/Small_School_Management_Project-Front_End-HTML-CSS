@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="../../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../../Scripts/jquery-3.0.0.js"></script>
+    <script src="../../Scripts/popper.js"></script>
+    <script src="../../Scripts/bootstrap.js"></script>
+
+</head>
+<body class="bg-info">
+    <div class="container-fluid">
+
+        <!--First Header Row-->
+        <div class="row">
+            <div class="col">
+                <!-- A grey horizontal navbar that becomes vertical on small screens -->
+                <nav class="navbar navbar-expand-sm bg-dark">
+                    <a class="navbar-brand" href="../../Index.html">Private School</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Links -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Students/Students.html">Students</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Trainers/Trainers.html">Trainers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Courses/Courses.html">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Assignments/Assignments.html">Assignments</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Students/Students_Per_Course.html">Students Per Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="Trainers_Per_Course.html">Trainers Per Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Assignments/Assignments_Per_Course.html">Assignments Per Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Assignments/Assignments_Per_Student_Per_Course.html">Assignments Per Student Per Course</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+        <!--Edit Trainer per Courses-->
+        <div class="mt-4 mb-0 float-right">
+            <a class="btn btn-success" href="Trainers_Per_Course.html">Return to Trainers Per Course</a>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="container">
+                    <div class="edit_trainerPerCourse" id="edit_PapakostaCourses">
+                        <div class="mt-4 mb-0">
+                            <table class="table table-dark table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Edit Trainer</th>
+                                        <th>Edit Courses</th>
+                                        <th>Delete Trainer from Course</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <form>
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text" value="Maria Papakosta" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 characters" />
+                                                </div>
+                                            </form>
+
+                                        </td>
+                                        <td>
+                                            <form>
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text" value="Algebra" placeholder="Enter letters and/or numbers (length must be 2 - 15)" autocomplete="off" required pattern="[A-Za-z0-9\s]{2,15}" title="Letters and numbers between 2 and 15 characters/numbers" />
+                                                </div>
+                                            </form>
+                                            <form>
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text" value="Geometry" placeholder="Enter letters and/or numbers (length must be 2 - 15)" autocomplete="off" required pattern="[A-Za-z0-9\s]{2,15}" title="Letters and numbers between 2 and 15 characters/numbers" />
+                                                </div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <a class="btn btn-danger" href="Trainers_Per_Course_Edit.html">Delete</a>
+                                            </div> <br><br>
+                                            <div class="btn-group">
+                                                <a class="btn btn-danger" href="Trainers_Per_Course_Edit.html">Delete</a>
+                                            </div><br><br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <a class="btn btn-warning" href="../Trainers/Trainers_Edit.html#edit_papakosta">Edit Trainer details</a></td>
+                                        <td><a class="btn btn-warning" href="../Courses/Courses_Edit.html">Edit Courses details</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button class="btn btn-primary form-control">Save Changes</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <hr />
+                    <br />
+                    <div class="edit_trainerPerCourse" id="edit_KarampelouCourses">
+                        <div class="mt-4 mb-0">
+                            <table class="table table-dark table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Edit Trainer</th>
+                                        <th>Edit Courses</th>
+                                        <th>Delete Trainer from Course</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <form>
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text" value="Ioanna Karampelou" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 characters" />
+                                                </div>
+                                            </form>
+
+                                        </td>
+                                        <td>
+                                            <form>
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text" value="Geometry" placeholder="Enter letters and/or numbers (length must be 2 - 15)" autocomplete="off" required pattern="[A-Za-z0-9\s]{2,15}" title="Letters and numbers between 2 and 15 characters/numbers" />
+                                                </div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <a class="btn btn-danger" href="Trainers_Per_Course_Edit.html">Delete</a>
+                                            </div> <br><br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <a class="btn btn-warning" href="../Trainers/Trainers_Edit.html#edit_Karampelou">Edit Trainer details</a></td>
+                                        <td><a class="btn btn-warning" href="../Courses/Courses_Edit.html">Edit Courses details</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button class="btn btn-primary form-control">Save Changes</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <hr />
+                    <br />
+                    <div class="edit_trainerPerCourse" id="edit_KatakaimeniCourses">
+                        <div class="mt-4 mb-0">
+                            <table class="table table-dark table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Edit Trainer</th>
+                                        <th>Edit Courses</th>
+                                        <th>Delete Trainer from Course</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <form>
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text" value="Margarita Katakaimeni" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 characters" />
+                                                </div>
+                                            </form>
+
+                                        </td>
+                                        <td>
+                                            <form>
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text" value="Social Psychology" placeholder="Enter letters and/or numbers (length must be 2 - 15)" autocomplete="off" required pattern="[A-Za-z0-9\s]{2,15}" title="Letters and numbers between 2 and 15 characters/numbers" />
+                                                </div>
+                                            </form>
+                                            <form>
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text" value="Cognitive Psychology" placeholder="Enter letters and/or numbers (length must be 2 - 15)" autocomplete="off" required pattern="[A-Za-z0-9\s]{2,15}" title="Letters and numbers between 2 and 15 characters/numbers" />
+                                                </div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <a class="btn btn-danger" href="Trainers_Per_Course_Edit.html">Delete</a>
+                                            </div> <br><br>
+                                            <div class="btn-group">
+                                                <a class="btn btn-danger" href="Trainers_Per_Course_Edit.html">Delete</a>
+                                            </div> <br><br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <a class="btn btn-warning" href="../Trainers/Trainers_Edit.html#edit_katakaimeni">Edit Trainer details</a></td>
+                                        <td><a class="btn btn-warning" href="../Courses/Courses_Edit.html">Edit Courses details</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button class="btn btn-primary form-control">Save Changes</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <hr />
+                    <br />
+                    <div class="edit_trainerPerCourse" id="edit_SovaridouCourses">
+                        <div class="mt-4 mb-0">
+                            <table class="table table-dark table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Edit Trainer</th>
+                                        <th>Edit Courses</th>
+                                        <th>Delete Trainer from Course</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <form>
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text" value="Emmanouela Sovaridou" placeholder="Enter letters only (length must be 2 15)" autocomplete="off" required pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 characters" />
+                                                </div>
+                                            </form>
+
+                                        </td>
+                                        <td>
+                                            <form>
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text" value="Cognitive Psychology" placeholder="Enter letters and/or numbers (length must be 2 - 15)" autocomplete="off" required pattern="[A-Za-z0-9\s]{2,15}" title="Letters and numbers between 2 and 15 characters/numbers" />
+                                                </div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <a class="btn btn-danger" href="Trainers_Per_Course_Edit.html">Delete</a>
+                                            </div> <br><br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <a class="btn btn-warning" href="../Trainers/Trainers_Edit.html#edit_sovaridou">Edit Trainer details</a></td>
+                                        <td><a class="btn btn-warning" href="../Courses/Courses_Edit.html">Edit Courses details</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button class="btn btn-primary form-control">Save Changes</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4 mb-4 float-right">
+        <a class="btn btn-success" href="Trainers_Per_Course.html">Return to Trainers Per Course</a>
+    </div>
+</body>
+</html>
